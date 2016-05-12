@@ -129,7 +129,7 @@ void ofxOscEvent::updateThread(){
     while ( hasWaitingMessages() ) {
         
         ofxOscMessage m;
-        getNextMessage(&m);
+        getNextMessage(m);
         
         string addr = m.getAddress();
         if ( !isNonRealtime ) {
